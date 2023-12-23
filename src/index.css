@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hedvig Letters Serif", serif;
+}
+
+.card {
+  border: none !important;
+  margin: 1.5%;
+}
+section {
+  margin-bottom: 2%;
+  margin-top: 2%;
+ 
+
+}
+
+.card-group .card,
+.col .card {
+  border-radius: 10px 10px 10px 10px !important;
+
+  box-shadow: 4px 4px 4px 4px #e9e9e98c;
+
+ 
+ 
+}
+
+
+.card-group .card img ,
+.col .card img {
+height: 256px;
+width: auto;
+ 
+
+}
+
+ 
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(141, 140, 140, 0.151);
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in-out;
+  pointer-events: none;
+  border-radius: 10px 10px 10px 10px !important;
+}
+
+.card:hover::before {
+  transform: rotateX(0deg);
+}
+
+ul li {
+  background-color: none !important;
+}
